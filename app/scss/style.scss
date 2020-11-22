@@ -24,6 +24,8 @@
   &__list-link {
     color:  $default-color;
     @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
     }
   }
 
@@ -89,9 +91,100 @@
     &__link-img{
       margin: 0 auto;
     }
-
   }
 
+  .footer-top {
+    padding: 78px 0 76px;
+    border-bottom: 1px solid #dae4e9;
+    display: flex;
+
+    &__contact {
+      width: 200px;
+      margin-right: 100px;
+    }
+    &__nav {
+      width: 170px;
+      margin-right: 130px;
+    }
+    &__item-form{
+      max-width: 270px;
+    }
+    &__text{
+      color: #7b7b7b;
+      line-height: 24px;
+      margin-bottom: 36px;
+    }
+    &__logo{
+      margin-bottom: 28px;
+    }
+    &__adress {
+      line-height: 24px;
+      display: block;
+      margin-bottom: 23px;
+    }
+    &__phone,
+    &__email{
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+
+    &__title{
+      margin-bottom: 28px;
+      @extend %dmsans-700;
+      font-size: 16px;
+      line-height: 21px;
+      color: #1f2044;
+      text-transform: uppercase;
+    }
+    &__link {
+      line-height: 32px;
+    }  
+    &__form-input {
+      max-width: 170px;
+      width: 100%;
+      background-color: #fef7f0;
+      border: none;
+      padding: 12px 10px 12px 15px;
+      &::placeholder{
+        color: #234969;
+        @extend %dmsans-400;
+        font-size: 12px;
+      }
+
+    }
+    &__form-btn {
+      border: none;
+      background-color: #a3bbc8;
+      color: #ffffff;
+      padding: 12px 14px;
+      margin-left: -4px;
+      cursor: pointer;
+    }
+  }
+.footer-bottom {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+.footer-menu {
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 15px;
+  }
+  &__link--home,
+  &__link--about,
+  &__link--blog{
+    border-right: 1px solid #7b7b7b;
+    height: 16px;
+    padding-right: 15px;
+  }
+
+}
 
 
 
