@@ -3,6 +3,95 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  margin: 0 0 auto;
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 32px;
+  }
+
+  &__list-link {
+    color:  $default-color;
+    @extend %rubik-500;
+    }
+  }
+
+  .user-nav {
+    display: flex;
+
+    &__link {
+      position: relative;
+      border-radius: 50%;
+      width: 50px;
+      padding: 15px 0;
+    }
+
+    &__num {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      top: 5px;
+      right: 25px;
+      font-size: 10px;
+      text-align: center;
+      line-height: 16px;
+      color: $accent-color;
+      @extend %dmsans-400;
+    }
+
+    &__link--search {
+      background-color: #edf1f4;
+      margin-right: 20px;
+      width: 50px;
+      padding: 15px 0;
+    }
+
+    &__link--heart,
+    &__link--shop{
+      width: 88px;
+      background-color: #fcd7b6;
+    }
+    &__link--heart{
+      border-radius: 50px 0 0 50px;
+      &::after{
+        content: '';
+        width: 1px;
+        height: 32px;
+        background-color: #fde7d3;
+        position: absolute;
+        right: 0;
+        top: 9px;
+      }
+    }
+
+    &__link--shop{
+      border-radius: 0 50px 50px 0;
+    }
+    
+    &__link--menu {
+      background-color: #a3bbc8;
+      margin-left: 20px;
+      
+    }
+    &__link-img{
+      margin: 0 auto;
+    }
+
+  }
+
 
 
 
