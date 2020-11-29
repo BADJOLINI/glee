@@ -1,29 +1,33 @@
 $accent-color: #243f4d;
 $default-color: #436372;
-$title-color: #1a1a1a;
+$title-color: #191919;
+$slick-dot-color: white;
+$slick-dot-color-active: $slick-dot-color;
+$slick-opacity-default: 0.75;
+$slick-opacity-not-active: 0.25;
 
 %dmsans-400 {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans-Regular';
   font-weight: 400;
 }
 
 %dmsans-500 {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans-Medium';
   font-weight: 500;
 }
 
 %dmsans-700 {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans-Bold';
   font-weight: 700;
 }
 
 %rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik-Regular';
   font-weight: 400;
 }
 
 %rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik-Medium';
   font-weight: 500;
 }
 
