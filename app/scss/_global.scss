@@ -1,18 +1,18 @@
 html,
-body{
+body {
   height: 100%;
 }
 
 body {
-font-size: 15px;
-line-height: 30px;
-color: $default-color;
-@extend %rubik-400;
-display: flex;
-flex-direction: column;
+  font-size: 15px;
+  line-height: 30px;
+  color: $default-color;
+  @extend %rubik-400;
+  display: flex;
+  flex-direction: column;
 }
 
-.main{
+.main {
   flex-grow: 1;
 }
 
@@ -27,4 +27,3 @@ flex-direction: column;
   margin: 0 auto;
   padding: 0 15px;
 }
-
