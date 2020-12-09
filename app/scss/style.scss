@@ -28,7 +28,7 @@
     color: $default-color;
     @extend %rubik-500;
     font-size: 15px;
-    line-height: 12px;
+    line-height: 15px;
   }
 }
 
@@ -81,7 +81,6 @@
       top: 9px;
     }
   }
-
   &__link--shop {
     border-radius: 0 50px 50px 0;
   }
@@ -230,7 +229,7 @@
   &__link {
     background-color: #a3bbc8;
     font-size: 15px;
-    line-height: 12px;
+    line-height: 15px;
     @extend %rubik-500;
     color: #ffffff;
     padding: 23px 100px 20px 27px;
@@ -297,18 +296,18 @@
       width: 55px;
       height: 55px;
     }
-    &__item--sup::before {
-      background-image: url("../images/icons/24.svg");
-      background-repeat: no-repeat;
-    }
-    &__item--delivery::before {
-      background-image: url("../images/icons/delivery.svg");
-      background-repeat: no-repeat;
-    }
-    &__item--payment::before {
-      background-image: url("../images/icons/payment.svg");
-      background-repeat: no-repeat;
-    }
+  }
+  &__item--sup::before {
+    background-image: url("../images/icons/24.svg");
+    background-repeat: no-repeat;
+  }
+  &__item--delivery::before {
+    background-image: url("../images/icons/delivery.svg");
+    background-repeat: no-repeat;
+  }
+  &__item--payment::before {
+    background-image: url("../images/icons/payment.svg");
+    background-repeat: no-repeat;
   }
 
   &__title {
@@ -547,7 +546,12 @@
 }
 
 .design-item {
+  display: flex;
+  &__img {
+    position: relative;
+  }
   &__title {
+    position: absolute;
     width: 175px;
     @extend %dmsans-700;
     font-size: 20px;
@@ -557,15 +561,16 @@
   }
 
   &__subtitle {
+    position: absolute;
     @extend %dmsans-700;
     font-size: 16px;
     color: #a3bbc8;
-    margin-left: 37px;
+    margin: 86px 0 0px 34px;
   }
 }
 
 .video {
-  padding-top: 115px;
+  padding-top: 112px;
   &__inner {
     display: flex;
   }
