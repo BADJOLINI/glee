@@ -588,6 +588,7 @@
 }
 
 .insights {
+  background-color: #ffffff;
   padding-top: 120px;
   &__top {
     display: flex;
@@ -603,14 +604,94 @@
     font-size: 16px;
     color: #262626;
     @extend %dmsans-700;
+    padding-right: 23px;
+    top: 5px;
+    right: 4px;
+    position: relative;
+  }
+  &__link::after {
+    position: absolute;
+    content: "";
     background-image: url("../images/icons/view-arrow.svg");
-    background-repeat: no-repeat;
+    width: 6px;
+    height: 11px;
+    top: 9px;
+    right: -2px;
+  }
+
+  &__items {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+  }
+  &__imglink {
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    display: block;
+    img {
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  &__item-news {
+    font-size: 14px;
+    line-height: 29px;
+    text-transform: uppercase;
+    @extend %dmsans-700;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #a3bbc8;
+    width: 103px;
+    position: absolute;
+    margin: -17px 0px 0px 27px;
+  }
+
+  &__item-box {
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 31px 30px 15px 30px;
+    min-height: 170px;
+    background-color: #fff;
+  }
+  &__item-title {
+    @extend %dmsans-500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #262626;
+    position: relative;
+    min-height: 91px;
+    max-width: 290px;
+    padding-bottom: 25px;
+  }
+  &__item-title::after {
+    content: "";
+    width: 310px;
+    height: 1px;
+    background-color: #e0e0e0;
+    position: absolute;
+    right: 0;
+    top: 79px;
+  }
+  &__item-info {
+    display: flex;
+    margin-left: 8px;
+  }
+  &__item-date,
+  &__item-author {
+    font-size: 12px;
+    color: #222933;
+    text-transform: uppercase;
+    margin-right: 37px;
+    position: relative;
   }
 }
 
 .partners {
-  padding: 75px 0 90px;
+  padding: 263px 0 90px;
   background-color: #fef7f0;
+  margin-top: -170px;
 
   &__list {
     display: flex;
@@ -620,9 +701,7 @@
 
   &__item {
     margin: 0 50px;
-    // & + & {
-    //   margin-left: 35px;
-    // }
   }
 }
+
 @import "media";
