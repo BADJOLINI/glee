@@ -1,43 +1,44 @@
 $accent-color: #243f4d;
 $default-color: #436372;
 $title-color: #191919;
+$blue: #a3bbc8;
 $slick-dot-color: #fff;
 $slick-dot-color-active: $slick-dot-color;
 $slick-opacity-default: 0.75;
 $slick-opacity-not-active: 0.25;
 
 %dmsans-400 {
-  font-family: "DMSans-Regular";
+  font-family: "DMSans";
   font-weight: 400;
 }
 
 %dmsans-500 {
-  font-family: "DMSans-Medium";
+  font-family: "DMSans";
   font-weight: 500;
 }
 
 %dmsans-700 {
-  font-family: "DMSans-Bold";
+  font-family: "DMSans";
   font-weight: 700;
 }
 
 %poppins-700 {
-  font-family: "Poppins-Bold";
+  font-family: "Poppins";
   font-weight: 700;
 }
 
 %rubik-300 {
-  font-family: "Rubik-Light";
+  font-family: "Rubik";
   font-weight: 300;
 }
 
 %rubik-400 {
-  font-family: "Rubik-Regular";
+  font-family: "Rubik";
   font-weight: 400;
 }
 
 %rubik-500 {
-  font-family: "Rubik-Medium";
+  font-family: "Rubik";
   font-weight: 500;
 }
 
@@ -46,4 +47,12 @@ $slick-opacity-not-active: 0.25;
 }
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
