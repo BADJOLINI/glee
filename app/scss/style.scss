@@ -364,6 +364,20 @@
       width: 55px;
       height: 55px;
     }
+    &::after {
+      content: "";
+      width: 1px;
+      height: 170px;
+      background-color: #e8e4df;
+      position: absolute;
+      right: -130px;
+      top: -35px;
+    }
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
     &--sup::before {
       background-image: url("../images/icons/24.svg");
       background-repeat: no-repeat;
@@ -452,6 +466,10 @@
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  width: 100%;
+  &--list {
+    margin-bottom: 50px;
+  }
   &__img-box {
     position: relative;
     height: 270px;
@@ -905,6 +923,7 @@
 }
 
 .shop {
+  background-color: #fff;
   padding: 113px 0 120px;
 
   &__inner {
@@ -912,7 +931,8 @@
   }
 
   &__filters {
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     margin-right: 30px;
   }
 }
@@ -1081,8 +1101,8 @@
     margin-right: 92px;
   }
 
-  &__title, 
-  &__price{
+  &__title,
+  &__price {
     font-size: 14px;
     color: #333333;
   }
@@ -1094,4 +1114,52 @@
 
 .star {
   display: flex;
+}
+
+.shop-content {
+  padding-top: 15px;
+  width: 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.pagination {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__link {
+    border: 1px solid $blue;
+    color: $accent-color;
+    padding: 17px 21px;
+    font-size: 16px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 5px;
+    }
+  }
+  &__link--active {
+      background-color: $blue;
+      color: #fff;
+    }
+  &__next {
+    cursor: pointer;
+    margin-top: -13px;
+    border: 1px solid $blue;
+    color: $accent-color;
+    font-size: 16px;
+    padding: 17px 21px;
+    padding: 11px 19px;
+  }
 }
