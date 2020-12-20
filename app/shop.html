@@ -124,11 +124,14 @@
             <div class="filter-price filter__item">
               <h2 class="filter__title">price</h2>
               <form class="filter-price__form" action="#">
-                <input class="filter-price__input" type="text" name="range" data-type="double" data-min="100"
-                  data-max="500" data-from="200" data-to="400">
+                <input class="filter-price__input" type="text" name="range" data-type="double" 
+                data-min="10"
+                  data-max="1000" 
+                  data-from="100" 
+                  data-to="500">
                 <div class="filter-price__prices">
-                  <span class="filter-price__from">$100.00</span>
-                  <span class="filter-price__to">$500.00</span>
+                  <!-- <span class="filter-price__from">$100.00</span>
+                  <span class="filter-price__to">$500.00</span> -->
                 </div>
               </form>
             </div>
@@ -149,7 +152,7 @@
                   <input class="filter-brand__input" type="checkbox">
                   <div class="filter-brand__checkbox">
                     <span>Brothers</span>
-                    <span>(21)</span>
+                    <span class="filter-brand__checkbox-num">(21)</span>
                   </div>
                 </label>
 
@@ -157,7 +160,7 @@
                   <input class="filter-brand__input" type="checkbox">
                   <div class="filter-brand__checkbox">
                     <span>Regal</span>
-                    <span>(3)</span>
+                    <span class="filter-brand__checkbox-num">(3)</span>
                   </div>
                 </label>
 
@@ -165,7 +168,7 @@
                   <input class="filter-brand__input" type="checkbox">
                   <div class="filter-brand__checkbox">
                     <span>Nadia</span>
-                    <span>(14)</span>
+                    <span class="filter-brand__checkbox-num">(14)</span>
                   </div>
                 </label>
 
@@ -173,7 +176,7 @@
                   <input class="filter-brand__input" type="checkbox">
                   <div class="filter-brand__checkbox">
                     <span>Otobi</span>
-                    <span>(6)</span>
+                    <span class="filter-brand__checkbox-num">(6)</span>
                   </div>
                 </label>
 
@@ -187,9 +190,9 @@
                   <input class="filter-products__input" type="checkbox">
                   <div class="filter-products__checkbox">
                     <img src="images/product/shop-1.jpg" class="filter-products__img">
-                    <div class="filter-products__descr">
-                      <div class="star"></div>
+                    <div class="filter-products__descr">                     
                       <div class="filter-products__title">Pendant lamp</div>
+                      <div class="star" data-rateyo-rating="3.5"></div>
                       <p class="filter-products__price">
                         23$
                       </p>
@@ -202,8 +205,8 @@
                   <div class="filter-products__checkbox">
                     <img src="images/product/shop-2.jpg" class="filter-products__img">
                     <div class="filter-products__descr">
-                      <div class="star"></div>
                       <div class="filter-products__title">Pendant lamp</div>
+                      <div class="star" data-rateyo-rating="3.5"></div>
                       <p class="filter-products__price">
                         23$
                       </p>
@@ -216,8 +219,9 @@
                   <div class="filter-products__checkbox">
                     <img src="images/product/shop-3.jpg" class="filter-products__img">
                     <div class="filter-products__descr">
-                      <div class="star"></div>
+                      
                       <div class="filter-products__title">Pendant lamp</div>
+                      <div class="star" data-rateyo-rating="3.5"></div>
                       <p class="filter-products__price">
                         23$
                       </p>

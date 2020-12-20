@@ -1029,11 +1029,8 @@
   height: 4px;
   background-color: $blue;
 }
-.irs-from,
-.irs-to,
-.irs-single {
-  display: none;
-}
+
+
 
 .filter-brand {
   &__label {
@@ -1094,7 +1091,7 @@
     max-width: 70px;
     max-height: 70px;
     width: 100%;
-    overflow: hidden;
+    object-fit: contain;
   }
 
   &__descr {
