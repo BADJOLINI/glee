@@ -10,18 +10,18 @@ $(function () {
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     prefix: "$",
-    // onStart: function (data) {
-    //   $('filter-price__from').text(data, from);
-    //   $('filter-price__to').text(data, to);
-    // },
-    // onChange: function (data) {
-    //   $('filter-price__from').text(data, from);
-    //   $('filter-price__to').text(data, to);
-    // },
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
   });
 
   $(".star").rateYo({
-    starWidth: "15px",
+    starWidth: "12px",
     numStars: 5,
     minValue: 0,
     maxValue: 5,
