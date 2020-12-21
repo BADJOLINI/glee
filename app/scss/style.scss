@@ -999,7 +999,8 @@
 }
 
 .filter-price {
-  &__prices {
+  margin-bottom: 70px;
+  &__label {
     display: flex;
     justify-content: space-between;
   }
@@ -1007,32 +1008,47 @@
   &__price {
     font-size: 14px;
   }
+  &__from {
+    margin-right: 190px;
+  }
 }
 
+.irs--flat {
+  height: 40px;
+  margin-bottom: -5px;
+}
 .irs--flat .irs-line {
-  top: 33px;
+  top: 11px;
   height: 3px;
   background-color: #c2d2db;
   border-radius: 0px;
 }
 .irs--flat .irs-handle {
-  top: 28px;
+  top: 5px;
   width: 15px;
   height: 15px;
   background-color: $blue;
+  cursor: pointer;
 }
 .irs--flat .irs-handle > i:first-child {
   display: none;
 }
 .irs--flat .irs-bar {
-  top: 33px;
+  top: 11px;
   height: 4px;
   background-color: $blue;
 }
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
 .irs-from,
 .irs-to,
 .irs-single {
   display: none;
+  top: 50px;
 }
 
 .filter-brand {
@@ -1094,11 +1110,11 @@
     max-width: 70px;
     max-height: 70px;
     width: 100%;
-    overflow: hidden;
+    object-fit: contain;
   }
 
   &__descr {
-    margin-right: 92px;
+    margin-right: 90px;
   }
 
   &__title,
@@ -1114,6 +1130,9 @@
 
 .star {
   display: flex;
+}
+.jq-ry-container {
+  padding: 5px 0px 4px 0px;
 }
 
 .shop-content {
@@ -1150,9 +1169,9 @@
     }
   }
   &__link--active {
-      background-color: $blue;
-      color: #fff;
-    }
+    background-color: $blue;
+    color: #fff;
+  }
   &__next {
     cursor: pointer;
     margin-top: -13px;
