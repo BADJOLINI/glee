@@ -1130,7 +1130,11 @@
 
 .star {
   display: flex;
+  &--product {
+    margin-bottom: 30px;
+  }
 }
+
 .jq-ry-container {
   padding: 5px 0px 4px 0px;
 }
@@ -1168,10 +1172,12 @@
       margin-right: 5px;
     }
   }
+
   &__link--active {
     background-color: $blue;
     color: #fff;
   }
+
   &__next {
     cursor: pointer;
     margin-top: -13px;
@@ -1180,5 +1186,138 @@
     font-size: 16px;
     padding: 17px 21px;
     padding: 11px 19px;
+  }
+}
+
+.productshop {
+  padding: 120px 0 105px;
+}
+
+.productshop-item {
+  &__inner {
+    display: flex;
+  }
+  &__slide {
+    max-width: 550px;
+    width: 100%;
+    margin-right: 66px;
+  }
+
+  &__content {
+    width: 570px;
+  }
+  &__title {
+    @extend %rubik-400;
+    font-size: 40px;
+    color: #333333;
+    margin: 30px 0 20px 0px;
+  }
+
+  &__price {
+    @extend %rubik-400;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 25px;
+  }
+
+  &__box {
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: $accent-color;
+    margin: 0px 0px 27px 4px;
+  }
+
+  &__num {
+    margin-right: 5px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    background-color: #a3bbc8;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fffefe;
+    padding: 11px 0;
+    width: 208px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+}
+
+.jq-number__field {
+  width: 48px;
+  border: 1px solid $blue;
+  border-bottom-color: $blue;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.jq-number__field input {
+  width: 100%;
+  padding: 17px 9px;
+  border: none;
+  outline: none;
+  background: none;
+  @extend %rubik-400;
+  color: #333;
+  text-align: center;
+}
+
+.productshop-slide {
+  &__thumb {
+    float: left;
+    width: 138px;
+    margin-right: 25px;
+  }
+
+  &__thumb-item {
+    margin-bottom: 25px;
+    width: 138px;
+    height: 160px;
+    border: 2px solid #f2f2f2;
+    cursor: pointer;
+    img {
+      width: 77px;
+      height: 158px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+
+  &__big {
+    float: left;
+    width: 387px;
+    border: 2px solid #f2f2f2;
+    img {
+      width: 233px;
+      height: 405px;
+      object-fit: cover;
+      margin: 60px 0px 50px 75px;
+    }
+  }
+}
+
+.productshop-info {
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__title {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: $accent-color;
+    margin-right: 5px;
+  }
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: $accent-color;
   }
 }
