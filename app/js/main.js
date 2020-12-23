@@ -1,5 +1,14 @@
 $(function () {
 
+  $('.productshop-tabs__top-item').on('click', function(e) {
+    e.preventDefault();
+    $('.productshop-tabs__top-item').removeClass('productshop-tabs__top-item--active');
+    $(this).addClass('productshop-tabs__top-item--active');
+
+    $('.productshop-tabs__content-item').removeClass('productshop-tabs__content-item--active');
+    $($(this).attr('href')).addClass('productshop-tabs__content-item--active');
+  })
+
   $('.productshop-item__num').styler();
 
   $('.productshop-slide__thumb').slick({
@@ -54,7 +63,6 @@ $(function () {
     minValue: 0,
     maxValue: 5,
     spacing: "10px",
-    readOnly: true,
     normalFill: '#d6d6d6',
     ratedFill: '#ffcc00'
   });

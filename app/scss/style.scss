@@ -1220,9 +1220,6 @@
     margin-bottom: 25px;
   }
 
-  &__box {
-  }
-
   &__text {
     @extend %rubik-400;
     font-size: 16px;
@@ -1318,6 +1315,7 @@
   @extend %rubik-400;
   color: #333;
   text-align: center;
+  cursor: default;
 }
 
 .productshop-slide {
@@ -1364,9 +1362,6 @@
 }
 
 .productshop-info {
-  &__list {
-  }
-
   &__item {
     display: flex;
   }
@@ -1381,5 +1376,114 @@
     @extend %rubik-400;
     font-size: 16px;
     color: $accent-color;
+  }
+}
+
+.productshop-tabs {
+  padding-top: 100px;
+
+  &__top {
+    margin-bottom: 40px;
+    @extend %rubik-500;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__top-item {
+    background-color: #edf1f4;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px 70px;
+    cursor: pointer;
+    color: $accent-color;
+    margin-right: 13px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__top-item--active {
+    background-color: #a3bbc8;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fffefe;
+    padding: 15px 70px;
+    cursor: pointer;
+  }
+
+  &__content-item {
+    display: none;
+    &.productshop-tabs__content-item--active {
+      display: block;
+    }
+  }
+
+  &__content-descr {
+    font-size: 16px;
+    color: $accent-color;
+  }
+}
+
+.related {
+  padding-top: 18px;
+  &-top {
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 36px;
+    @extend %dmsans-700;
+    color: $accent-color;
+  }
+
+  &__btns {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__btn {
+    border: 2px solid #edf1f4;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    padding: 13px 0px 0px 21px;
+    background-image: url("../images/icons/product-arrow.svg");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: 12px 19px;
+    margin: 7px 0px 0px -120px;
+    cursor: pointer;
+
+    &--active {
+      border: 2px solid $blue;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      padding: 13px 0px 0px 21px;
+      background-image: url("../images/icons/product-arrow.svg");
+      background-repeat: no-repeat;
+      transform: rotate(0deg);
+      background-position: 12px 19px;
+      margin: 7px 0px 0px -50px;
+      cursor: pointer;
+    }
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
