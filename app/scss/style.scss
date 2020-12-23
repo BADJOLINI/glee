@@ -1245,20 +1245,73 @@
     width: 208px;
     cursor: pointer;
     margin-bottom: 50px;
+    margin-left: 158px;
   }
 }
 
+.jq-number {
+  position: relative;
+}
+
+.jq-number__spin {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  width: 48px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.jq-number__spin.minus {
+  top: -4px;
+  left: 1px;
+  border: 1px solid #a3bbc8;
+  border-bottom-color: #a3bbc8;
+  padding: 25px 25px;
+}
+
+.jq-number__spin.plus {
+  top: -4px;
+  left: 99px;
+  border: 1px solid #a3bbc8;
+  border-bottom-color: #a3bbc8;
+  padding: 25px 25px;
+}
+
+.jq-number__spin::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 21px;
+  background-color: #333;
+  width: 10px;
+  height: 1px;
+}
+
+.jq-number__spin.plus::before {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  width: 1px;
+  height: 10px;
+  top: 19px;
+  left: 24px;
+}
+
 .jq-number__field {
+  position: absolute;
+  right: -100px;
+  top: -30px;
   width: 48px;
   border: 1px solid $blue;
   border-bottom-color: $blue;
   border-radius: 0px;
-  box-shadow: none;
 }
 
 .jq-number__field input {
   width: 100%;
-  padding: 17px 9px;
+  padding: 10px 9px;
   border: none;
   outline: none;
   background: none;
@@ -1268,6 +1321,10 @@
 }
 
 .productshop-slide {
+  .slick-vertical .slick-slide {
+    height: 160px;
+    margin-bottom: 16px;
+  }
   &__thumb {
     float: left;
     width: 138px;
@@ -1275,16 +1332,21 @@
   }
 
   &__thumb-item {
-    margin-bottom: 25px;
+    margin-bottom: 8px;
     width: 138px;
     height: 160px;
     border: 2px solid #f2f2f2;
     cursor: pointer;
     img {
       width: 77px;
-      height: 158px;
+      height: 156px;
       object-fit: contain;
       margin: 0 auto;
+    }
+    &:last-child {
+      & + & {
+        margin-bottom: 0;
+      }
     }
   }
 
