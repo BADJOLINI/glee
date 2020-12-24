@@ -1190,6 +1190,7 @@
 }
 
 .productshop {
+  background-color: #fff;
   padding: 120px 0 105px;
 }
 
@@ -1425,6 +1426,7 @@
 }
 
 .related {
+  background-color: #fff;
   padding-top: 18px;
   &-top {
     margin-bottom: 85px;
@@ -1484,6 +1486,191 @@
     margin-right: 30px;
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+.blog {
+  background-color: #fff;
+  padding: 120px 0 122px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 830px;
+    margin-right: 30px;
+  }
+
+  &__aside {
+    width: 270px;
+  }
+
+  &__category {
+margin-bottom: 40px;
+  }
+}
+
+.blog-item {
+  margin-bottom: 155px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__img-box {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  &__img {
+    max-width: 828px;
+    max-height: 500px;
+  }
+
+  &__info {
+    background-color: rgb(163, 187, 200);
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+    width: 275px;
+    height: 71px;
+  }
+
+  &__author {
+    left: 9px;
+    color: #fff;
+    position: relative;
+    padding-left: 18px;
+    top: 21px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../images/icons/user.svg");
+      width: 20px;
+      height: 20px;
+      left: -6px;
+      top: 4px;
+    }
+  }
+
+  &__date {
+    left: 21px;
+    top: 21px;
+    color: #fff;
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../images/icons/clock-icon.svg");
+      width: 20px;
+      height: 20px;
+      left: -6px;
+      top: 4px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    @extend %rubik-400;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $accent-color;
+    margin-bottom: 15px;
+    max-height: 80px;
+  }
+  &__btn {
+    border: 1px solid $blue;
+    border-radius: 0;
+    color: $blue;
+  }
+
+  &__pagination {
+    padding-top: 30px;
+    justify-content: unset;
+  }
+}
+
+.filter-search {
+  &__form {
+    border: 1px solid #edf1f4;
+    border-radius: 5px;
+    width: 268px;
+    height: 41px;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    width: 220px;
+    height: 39px;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+
+  &__btn {
+    position: relative;
+    background-color: #edf1f4;
+    border-radius: 5px;
+    border: none;
+    width: 48px;
+    height: 43px;
+    cursor: pointer;
+    background-image: url("../images/icons/search-1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline: none;
+    top: -41px;
+    left: 220px;
+  }
+}
+
+.recent-posts {
+  &__item {
+    display: flex;
+    margin-bottom: 23px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__top-title {
+    margin-bottom: 24px;
+  }
+
+  &__img-link {
+    display: block;
+    margin-right: 20px;
+    max-width: 71px;
+    width: 100%;
+  }
+  &__img {
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+  }
+
+  &__title {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+  }
+
+  &__date {
+    color: #9a9a9a;
+    font-size: 12px;
+    text-transform: uppercase;
+    left: 5px;
+    top: 3px;
+    &::before {
+      left: -6px;
+      top: -3px;
     }
   }
 }
