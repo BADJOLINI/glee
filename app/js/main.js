@@ -1,5 +1,7 @@
 $(function () {
 
+  
+
   $('.productshop-tabs__top-item').on('click', function(e) {
     e.preventDefault();
     $('.productshop-tabs__top-item').removeClass('productshop-tabs__top-item--active');
