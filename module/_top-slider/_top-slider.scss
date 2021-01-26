@@ -1,0 +1,144 @@
+.top-slider {
+  &__inner {
+    padding-top: 220px;
+    padding-bottom: 45px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 500px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $accent-color;
+    @extend %rubik-500;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    max-width: 370px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  &__link {
+    background-color: #a3bbc8;
+    font-size: 15px;
+    line-height: 15px;
+    @extend %rubik-500;
+    color: #ffffff;
+    padding: 23px 100px 20px 27px;
+    background-image: url("../images/arrow-shop.svg");
+    background-repeat: no-repeat;
+    background-position: 158px 26px;
+  }
+
+  &__img {
+    padding-top: 55px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 205px;
+    li {
+      padding: 0 6px;
+    }
+  }
+
+  button {
+    padding: 0;
+    @extend %rubik-500;
+    font-size: 11px;
+    color: $accent-color;
+    background-color: #ffffff;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .slick-dots {
+    .slick-active {
+      button {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.top-slider__bg {
+  background-color: #fcd7b6;
+}
+
+.slider-bot {
+  background-color: #fef7f0;
+  padding: 0 148px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+  }
+
+  &__item {
+    width: 300px;
+    padding-left: 75px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 55px;
+      height: 55px;
+    }
+    &::after {
+      content: "";
+      width: 1px;
+      height: 170px;
+      background-color: #e8e4df;
+      position: absolute;
+      right: -130px;
+      top: -35px;
+    }
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+    &--sup::before {
+      background-image: url("../images/icons/24.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--delivery::before {
+      background-image: url("../images/icons/delivery.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--payment::before {
+      background-image: url("../images/icons/payment.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}

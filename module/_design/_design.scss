@@ -1,0 +1,87 @@
+.design {
+  &__title {
+    font-size: 36px;
+    color: $title-color;
+    @extend %dmsans-700;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu {
+    padding-top: 25px;
+    justify-content: center;
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+    transition: color 0.3s;
+    cursor: pointer;
+    outline: none;
+    background-color: unset;
+    border: none;
+    &:hover {
+      color: $title-color;
+    }
+  }
+
+  .mixitup-control-active {
+    color: $title-color;
+  }
+
+  &__item {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__items {
+    padding-top: 75px;
+  }
+}
+
+.design__items {
+  padding-top: 75px;
+  display: grid;
+  min-height: 600px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 35px 30px;
+}
+
+.design-item {
+  display: flex;
+
+  &__img {
+    position: relative;
+    max-width: 370px;
+    max-height: 245px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    position: absolute;
+    width: 175px;
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $title-color;
+    margin: 34px 0px 7px 37px;
+  }
+
+  &__subtitle {
+    position: absolute;
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #a3bbc8;
+    margin: 86px 0 0px 34px;
+  }
+}

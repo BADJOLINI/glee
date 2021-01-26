@@ -42,7 +42,7 @@
       padding: 15px 0;
       &::before {
         content: "";
-        background-image: url(../images/icons/search.svg);
+        background-image: url("../images/icons/search.svg");
         background-repeat: no-repeat;
         position: absolute;
         width: 18px;
@@ -61,7 +61,7 @@
       border-radius: 50px 0 0 50px;
       &::before {
         content: "";
-        background-image: url(../images/icons/heart.svg);
+        background-image: url("../images/icons/heart.svg");
         background-repeat: no-repeat;
         position: absolute;
         width: 18px;
@@ -84,7 +84,7 @@
       border-radius: 0 50px 50px 0;
       &::before {
         content: "";
-        background-image: url(../images/icons/shop.svg);
+        background-image: url("../images/icons/shop.svg");
         background-repeat: no-repeat;
         position: absolute;
         width: 18px;
@@ -100,7 +100,7 @@
       height: 51px;
       &::before {
         content: "";
-        background-image: url(../images/icons/menu.svg);
+        background-image: url("../images/icons/menu.svg");
         background-repeat: no-repeat;
         position: absolute;
         width: 20px;
