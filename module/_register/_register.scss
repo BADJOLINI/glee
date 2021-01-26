@@ -1,0 +1,75 @@
+.modal {
+  padding-top: 112px;
+  max-width: 505px;
+  margin: 0 auto 120px;
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: $default-color;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 4px;
+    height: 60px;
+  }
+
+  &__btn {
+    display: block;
+    background-color: #a3bbc8;
+    border: none;
+    font-size: 18px;
+    color: #fffefe;
+    @extend %rubik-500;
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 38px;
+    margin-bottom: 26px;
+  }
+
+  &__label-checkbox {
+    border-bottom: 1px solid #dae4e9;
+    padding-bottom: 30px;
+    &--register {
+      border-bottom: none;
+    }
+  }
+
+  &__error {
+    color: #436372;
+    font-size: 14px;
+    margin-left: 210px;
+  }
+
+  &__notreg {
+    display: inline-block;
+    padding-top: 50px;
+    margin-left: 145px;
+    font-size: 14px;
+    color: $default-color;
+  }
+
+  &__btn-create {
+    margin-top: 15px;
+    display: block;
+    font-size: 18px;
+    padding: 14px 0;
+    border: 2px solid #a3bbc8;
+    width: 100%;
+    color: $accent-color;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 5px;
+    font-size: 12px;
+    cursor: context-menu;
+  }
+}

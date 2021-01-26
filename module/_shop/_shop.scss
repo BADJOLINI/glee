@@ -1,0 +1,265 @@
+.shop {
+  background-color: #fff;
+  padding: 113px 0 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+  }
+}
+
+.filter {
+  &__item {
+    margin-bottom: 53px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $accent-color;
+    @extend %dmsans-700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 39px;
+      height: 3px;
+      background-color: #b5c9d3;
+      top: 14px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.filter-category {
+  &__label {
+    cursor: pointer;
+    margin-bottom: 3px;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox {
+      background-color: #edf1f4;
+      border-radius: 5px;
+    }
+  }
+
+  &__checkbox {
+    font-size: 16px;
+    padding: 5px 15px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../images/icons/view-arrow.svg");
+      width: 6px;
+      height: 11px;
+      top: 13px;
+      right: 25px;
+    }
+  }
+}
+
+.filter-price {
+  margin-bottom: 70px;
+  &__label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 14px;
+  }
+  &__from {
+    margin-right: 190px;
+  }
+}
+
+.irs--flat {
+  height: 40px;
+  margin-bottom: -5px;
+}
+.irs--flat .irs-line {
+  top: 11px;
+  height: 3px;
+  background-color: #c2d2db;
+  border-radius: 0px;
+}
+.irs--flat .irs-handle {
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: $blue;
+  cursor: pointer;
+}
+.irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+.irs--flat .irs-bar {
+  top: 11px;
+  height: 4px;
+  background-color: $blue;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+  display: none;
+  top: 50px;
+}
+
+.filter-brand {
+  &__label {
+    cursor: pointer;
+    margin-bottom: 3px;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox {
+      background-color: #edf1f4;
+      border-radius: 5px;
+      color: $accent-color;
+    }
+  }
+
+  &__checkbox {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    &-num {
+      color: #b3b3b3;
+    }
+  }
+}
+
+.filter-products {
+  &__label {
+    cursor: pointer;
+    margin-bottom: 23px;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-products__checkbox {
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    max-height: 70px;
+    justify-content: space-between;
+  }
+
+  &__img {
+    border: 2px solid #f2f2f2;
+    background-color: #fefefe;
+    padding: 5px 2px;
+    max-width: 70px;
+    max-height: 70px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__descr {
+    margin-right: 90px;
+  }
+
+  &__title,
+  &__price {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &__price {
+    font-size: 15px;
+  }
+}
+
+.star {
+  display: flex;
+  &--product {
+    margin-bottom: 30px;
+  }
+}
+
+.jq-ry-container {
+  padding: 5px 0px 4px 0px;
+}
+
+.shop-content {
+  padding-top: 15px;
+  width: 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.pagination {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__link {
+    border: 1px solid $blue;
+    color: $accent-color;
+    padding: 17px 21px;
+    font-size: 16px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 5px;
+    }
+
+    &--active {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+
+  &__next {
+    cursor: pointer;
+    margin-top: -13px;
+    border: 1px solid $blue;
+    color: $accent-color;
+    font-size: 16px;
+    padding: 11px 19px;
+  }
+}

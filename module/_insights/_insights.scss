@@ -1,0 +1,137 @@
+.insights {
+  background-color: #ffffff;
+  padding-top: 120px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $title-color;
+    font-size: 36px;
+    @extend %dmsans-700;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #262626;
+    @extend %dmsans-700;
+    padding-right: 23px;
+    top: 5px;
+    right: 4px;
+    position: relative;
+  }
+
+  &__link::after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/view-arrow.svg");
+    width: 6px;
+    height: 11px;
+    top: 9px;
+    right: -2px;
+  }
+
+  &__items {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    max-width: 370px;
+    &__imglink {
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      display: block;
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+
+    &__news {
+      font-size: 14px;
+      line-height: 29px;
+      text-transform: uppercase;
+      @extend %poppins-700;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 50px;
+      background-color: #a3bbc8;
+      width: 103px;
+      position: absolute;
+      margin: -17px 0px 0px 27px;
+    }
+
+    &__box {
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      padding: 31px 30px 15px 30px;
+      min-height: 170px;
+      background-color: #fff;
+    }
+
+    &__title {
+      @extend %dmsans-500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #262626;
+      position: relative;
+      min-height: 91px;
+      max-height: 91px;
+      max-width: 290px;
+      padding-bottom: 25px;
+    }
+
+    &__title::after {
+      content: "";
+      width: 310px;
+      height: 1px;
+      background-color: #e0e0e0;
+      position: absolute;
+      right: 0;
+      top: 79px;
+    }
+
+    &__info {
+      display: flex;
+      margin-left: 8px;
+    }
+
+    &__date,
+    &__author {
+      font-size: 12px;
+      color: #222933;
+      text-transform: uppercase;
+      margin-right: 37px;
+      position: relative;
+    }
+  }
+}
+
+.partners {
+  padding: 263px 0 90px;
+  background-color: #fef7f0;
+  margin-top: -170px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0 50px;
+    & + & {
+      margin-right: 47px;
+    }
+    &:last-child {
+      margin-right: 87px;
+    }
+  }
+
+  &--short {
+    padding: 80px 0 75px;
+    background-color: #fef7f0;
+  }
+}

@@ -1,0 +1,143 @@
+.product-item {
+  padding: 10px 0 10px;
+  max-width: 270px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  width: 100%;
+  &--list {
+    margin-bottom: 50px;
+  }
+  &__img-box {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link-box {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(300%);
+    transition: 0.3s;
+  }
+
+  &__link {
+    display: inherit;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 13px 11px;
+    transition: 0.3s;
+    &:hover {
+      background-color: #a3bbc8;
+      path {
+        fill: #ffffff;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__icon {
+    padding-left: 20px;
+  }
+
+  &__images {
+    padding-top: 10px;
+    object-fit: scale-down;
+    height: 75%;
+  }
+
+  &:hover {
+    .product-item__link-box {
+      transform: translateY(0);
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    @extend %rubik-500;
+    color: $accent-color;
+    padding-top: 20px;
+  }
+
+  &__price {
+    font-size: 16px;
+    line-height: 40px;
+    @extend %dmsans-700;
+    color: #a3bbc8;
+  }
+}
+
+.related {
+  background-color: #fff;
+  padding-top: 18px;
+  &-top {
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 36px;
+    @extend %dmsans-700;
+    color: $accent-color;
+  }
+
+  &__btns {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__btn {
+    border: 2px solid #edf1f4;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    padding: 13px 0px 0px 21px;
+    background-image: url("../images/icons/product-arrow.svg");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: 12px 19px;
+    margin: 7px 0px 0px -120px;
+    cursor: pointer;
+
+    &--active {
+      border: 2px solid $blue;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      padding: 13px 0px 0px 21px;
+      background-image: url("../images/icons/product-arrow.svg");
+      background-repeat: no-repeat;
+      transform: rotate(0deg);
+      background-position: 12px 19px;
+      margin: 7px 0px 0px -50px;
+      cursor: pointer;
+    }
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
